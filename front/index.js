@@ -1,3 +1,9 @@
-var AppView = require('./app-view');
+var Backbone = require('backbone');
+var Mn = require('backbone.marionette');
+var Application = require('./Application/MnApp');
 
-var appView = new AppView();
+if (window.__agent) {
+  window.__agent.start(Backbone, Mn);
+}
+
+var app = new Application();

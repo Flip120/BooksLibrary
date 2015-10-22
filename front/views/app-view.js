@@ -1,14 +1,21 @@
-var Backbone = require('backbone');
-var $ = require('jquery');
-Backbone.$ = $;
+var Mn = require('backbone.marionette');
 
-module.exports = Backbone.View.extend({
-  initialize : function(){
-    console.log('START VIEW!');
-    this.render();
-  },
+module.exports = Mn.LayoutView.extend({
 
-  render : function(){
-    $('body').prepend('<p>WWWOOOOOOO</p>')
-  }
+    el  : 'body',
+    template : require("../templates/app-view.hbs"),
+
+    regions : {
+        menu : '#menu',
+        content : "#content"
+    },
+
+    initialize : function(){
+
+    },
+
+    onRender: function(){
+        this.getRegion('menu').show(new (Mn.ItemView.extend({ template : '<p>sss</p>'})));
+    }
+
 });
