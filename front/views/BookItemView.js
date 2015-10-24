@@ -1,0 +1,9 @@
+var Backbone = require('backbone');
+var Mn = require('backbone.marionette');
+var BookModel = require('../models/Book');
+
+module.exports = Mn.ItemView.extend({
+  className : 'item-book',
+  model  : BookModel,
+  template : require("../templates/BookItem.hbs"),
+});

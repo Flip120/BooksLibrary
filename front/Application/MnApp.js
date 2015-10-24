@@ -1,5 +1,5 @@
 var Mn = require('backbone.marionette');
-var AppView = require('../views/app-view');
+var AppView = require('../views/AppView');
 var $ = require('jquery');
 
 module.exports = Mn.Application.extend({
@@ -10,6 +10,6 @@ module.exports = Mn.Application.extend({
     launchMainView : function(){
         $('body')
             .append(new AppView()
-            .render());
+            .render().$el);
     }
 });

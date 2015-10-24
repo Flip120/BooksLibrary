@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "beefy front/index.js:bundle.js --live -- -t hbsfy",
+    "start": "beefy front/index.js:bundle.js --live --index=front/index.html -- -t hbsfy",
     "bundle": "browserify -t hbsfy front/index.js -o bundle.js"
   },
   "author": "",
