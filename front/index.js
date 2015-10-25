@@ -1,7 +1,8 @@
 var Backbone = require('backbone');
 var Mn = require('backbone.marionette');
 var Application = require('./Application/MnApp');
-var $ = require('jquery');
+var $ = jQuery = require('jquery');
+var bootstrap = require('bootstrap')
 
 Mn.Renderer.render = function(template, data){
   if(typeof template === 'function'){
