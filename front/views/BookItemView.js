@@ -3,7 +3,7 @@ var Mn = require('backbone.marionette');
 var BookModel = require('../models/Book');
 
 module.exports = Mn.ItemView.extend({
-  className : 'item-book col-md-4',
+  className : 'item-book col-md-3',
   model  : BookModel,
   template : require("../templates/BookItem.hbs"),
   events : {

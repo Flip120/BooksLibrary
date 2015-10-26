@@ -58,13 +58,22 @@ body {
     #search-book-input:focus { outline:none; }
 
 #books-view {
-  padding: 40px;
+  padding-top: 40px;
 }
 
 .item-book {
   text-align: center;
+  margin-bottom: 20px;
+}
+.item-book:hover{
+    cursor: pointer;
+}
+
+.item-book p {
+  /*height : 50px;*/
+  display: none;
 }
 .item-book img {
-  display: block;
+  max-height: 250px;
   margin: 0 auto;
 }
