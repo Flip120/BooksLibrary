@@ -12,6 +12,7 @@
   "dependencies": {
     "backbone": "^1.2.3",
     "backbone.marionette": "^2.4.3",
+    "bootstrap": "^3.3.5",
     "handlebars": "^4.0.3",
     "hbsfy": "^2.4.1",
     "jquery": "^2.1.4"

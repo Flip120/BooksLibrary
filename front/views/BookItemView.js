@@ -10,6 +10,6 @@ module.exports = Mn.ItemView.extend({
     'click' : 'bookClicked'
   },
   bookClicked : function(e) {
-    console.log(this.model);
+    this.trigger('clicked:book');
   }
 });

@@ -15,6 +15,14 @@ module.exports = Mn.CollectionView.extend({
     }
   }),
 
-  childView : BookItemView
+  childView : BookItemView,
+
+  childEvents : {
+      'clicked:book' : 'bookClicked'
+  },
+
+  bookClicked : function(){
+      console.log(arguments);
+  }
 
 });
